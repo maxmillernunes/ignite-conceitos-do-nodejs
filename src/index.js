@@ -21,7 +21,7 @@ function checksExistsUserAccount(request, response, next) {
 
   request.user = user;
 
-  next();
+  return next();
 }
 
 app.post("/users", (request, response) => {
